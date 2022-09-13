@@ -11,7 +11,6 @@ public class Tetris {
 	
 	//TODO: Decide on naming convention for these (colors vs pieces)
 	private enum Colors{
-		
         EMPTY,
         RED,     //Z-Piece
         ORANGE,  //L-Piece
@@ -19,25 +18,22 @@ public class Tetris {
         GREEN,   //S-Piece
         CYAN,    //I-Piece
         BLUE,    //J-Piece
-        PURPLE   //T-Piece
-        
+        PURPLE   //T-Piece   
     }
 	
 	private int difficulty = 48; // Number of frames between each movement of the current piece. 
 	private int[][] grid; //2D integer array representing each cell on the game board. 0 = empty, 1-7 are the colors of each piece.
 	
-	public Tetris(int difficulty) {
+	public Tetris(int difficulty){
 		
 		this.difficulty = difficulty;
-		
 	}
 
-	public Piece makePiece() {
+	public Piece makePiece(){
 		
 		Random rand = new Random();
 		
 		Piece piece = new Piece(rand.nextInt() % 7);
 		return piece;
-		
 	}
 }

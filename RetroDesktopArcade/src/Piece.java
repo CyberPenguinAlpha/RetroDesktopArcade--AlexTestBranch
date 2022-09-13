@@ -18,12 +18,10 @@ public class Piece {
 	 * @param type The type of Piece to create (Z-, L-, O-, S-, I-, J-, or T-Piece)
 	 */
 	public Piece(int type) {
-		
 		this.x = 4;
 		this.y = 20;
 		this.orientation = 0;
 		this.type = type;
-		
 	}
 	
 	/**
@@ -68,29 +66,22 @@ public class Piece {
 	 * @param direction The direction in which to move the piece, given as a character ('L' or 'R', for Left or Right).
 	 */
 	public void slide(char direction) {
-		
 		if (direction == 'L') this.x -= 1;
 		else if (direction == 'R') this.x += 1;
-		
 	}
 	
 	/**
 	 * Rotates the piece clockwise around its origin by 90 degrees.
 	 */
 	public void rotate() {
-		
 		this.orientation += 1;
 		if (this.orientation > 3) this.orientation = 0;
-		
 	}
 	
 	/**
 	 * Drops the piece by 1 line.
 	 */
 	public void advance() {
-		
 		this.y -= 1;
-		
 	}
-	
 }
