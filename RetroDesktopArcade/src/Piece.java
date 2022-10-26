@@ -3,7 +3,7 @@
  * Piece is an abstract parent class of each of the 7 standard Tetris pieces. It exists to provide a foundational
  * structure for a specific Tetris piece (i.e., S-piece, I-piece, Square-piece) to extend.
  * 
- * @author ssr515
+ * @author btj926 testing comment
  */
 public class Piece {
 	
